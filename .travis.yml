@@ -1,51 +1,29 @@
-#
-#  Be sure to run `pod spec lint CRDCrypt.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
+language: objective-c
+osx_image: xcode8.2
+env:
+global:
+- LC_CTYPE=en_US.UTF-8
+- LANG=en_US.UTF-8
+- PROJECT=CRDCrypt.xcodeproj
+- IOS_SCHEME="CRDCryptMobile"
+- IOS_SCHEME_TEST="CRDCryptMobileTests"
+- IOS_SDK=iphonesimulator10.2
+- OSX_SCHEME="CRDCryptMac"
+- OSX_SCHEME_TEST="CRDCryptMacTests"
+- OSX_SDK=macosx10.12
+matrix:
+- DESTINATION="id=8188B40E-F57F-4519-AC47-E43D884B9016" SCHEME="$IOS_SCHEME" SDK="$IOS_SDK" RUN_TESTS="NO" POD_LINT="NO"
+- DESTINATION="id=8188B40E-F57F-4519-AC47-E43D884B9016" SCHEME="$IOS_SCHEME_TEST" SDK="$IOS_SDK" RUN_TESTS="YES" POD_LINT="NO"
+- DESTINATION="arch=x86_64" SCHEME="$OSX_SCHEME" SDK="$OSX_SDK" RUN_TESTS="NO" POD_LINT="NO"
+- DESTINATION="arch=x86_64" SCHEME="$OSX_SCHEME_TEST" SDK="$OSX_SDK" RUN_TESTS="YES" POD_LINT="NO"
 
-Pod::Spec.new do |s|
+script:
+- set -o pipefail
+- xcodebuild -version
+- xcodebuild -showsdks
 
-# ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
+# Build Framework in Debug and Run Tests if specified
+- if [ "$RUN_TESTS" == "YES" ]; then xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test; else xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build; fi
 
-s.name         = "CRDCrypt"
-s.version      = "1.0.0"
-s.summary      = "Simple and quick way to encrypt/decrypt strings with AES256 on iOS or macOS."
-s.description  = <<-DESC
-Simple straightforward Swift-based extension to Data for AES256 encryption/decryption for macOS and iOS.
-DESC
-
-s.homepage     = "https://github.com/cdisdero/CRDCrypt"
-
-# ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-
-s.license      = "Apache License, Version 2.0"
-
-# ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-
-s.author             = { "Christopher Disdero" => "info@code.chrisdisdero.com" }
-
-# ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-
-s.ios.deployment_target = "9.0"
-s.osx.deployment_target = "10.11"
-
-# ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-
-s.source       = { :git => "https://github.com/cdisdero/CRDCrypt.git", :tag => "#{s.version}" }
-
-# ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-#
-
-s.source_files       = 'Shared/*.{swift,h,m}'
-s.ios.source_files   = 'CRDCryptMobile/*.h'
-s.osx.source_files   = 'CRDCryptMac/*.h'
-
-end
+# Run pod lib lint if specified
+- if [ "$POD_LINT" == "YES" ]; then pod lib lint --private --verbose; fi
