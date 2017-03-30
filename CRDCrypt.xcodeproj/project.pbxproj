@@ -42,7 +42,7 @@
 		474278D31E8C86BD0041E2DC /* CRDCrypt.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CRDCrypt.podspec; sourceTree = "<group>"; };
 		474278D41E8C9E090041E2DC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		474278D51E8C9E090041E2DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		474278D81E8C9E790041E2DC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		47CA9A751E8CA99400F443BA /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		47D6696D1E88A877008C1E88 /* CRDCryptMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDCryptMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D669791E88A8ED008C1E88 /* CRDCryptMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRDCryptMobile.h; path = CRDCryptMobile/CRDCryptMobile.h; sourceTree = SOURCE_ROOT; };
 		47D6697A1E88A8ED008C1E88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CRDCryptMobile/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -96,7 +96,7 @@
 		47D669631E88A877008C1E88 = {
 			isa = PBXGroup;
 			children = (
-				474278D81E8C9E790041E2DC /* .travis.yml */,
+				47CA9A751E8CA99400F443BA /* .travis.yml */,
 				474278D41E8C9E090041E2DC /* LICENSE */,
 				474278D51E8C9E090041E2DC /* README.md */,
 				474278D31E8C86BD0041E2DC /* CRDCrypt.podspec */,
