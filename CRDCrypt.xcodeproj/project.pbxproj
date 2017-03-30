@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47D6697B1E88A8ED008C1E88 /* CRDCryptMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D669791E88A8ED008C1E88 /* CRDCryptMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D669801E88A99B008C1E88 /* Data+MyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6697D1E88A99B008C1E88 /* Data+MyExtensions.swift */; };
+		47D669811E88A99B008C1E88 /* NSData+MyExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D6697E1E88A99B008C1E88 /* NSData+MyExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D669821E88A99B008C1E88 /* NSData+MyExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D6697F1E88A99B008C1E88 /* NSData+MyExtensions.m */; };
+		47D6698D1E88ABE8008C1E88 /* CRDCryptMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D6698B1E88ABE8008C1E88 /* CRDCryptMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D669911E88AC24008C1E88 /* Data+MyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6697D1E88A99B008C1E88 /* Data+MyExtensions.swift */; };
+		47D669921E88AC24008C1E88 /* NSData+MyExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D6697F1E88A99B008C1E88 /* NSData+MyExtensions.m */; };
+		47D669931E88AC2A008C1E88 /* NSData+MyExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D6697E1E88A99B008C1E88 /* NSData+MyExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47D6699D1E88AC6C008C1E88 /* CRDCryptMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D6696D1E88A877008C1E88 /* CRDCryptMobile.framework */; };
+		47D669A61E88ACD9008C1E88 /* DataMyExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D669A41E88ACB0008C1E88 /* DataMyExtensionsTests.swift */; };
+		47D669B11E88AE67008C1E88 /* CRDCryptMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D669891E88ABE8008C1E88 /* CRDCryptMac.framework */; };
+		47D669B71E88AE77008C1E88 /* DataMyExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D669A41E88ACB0008C1E88 /* DataMyExtensionsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47D6699E1E88AC6C008C1E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D669641E88A877008C1E88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D6696C1E88A877008C1E88;
+			remoteInfo = CRDCryptMobile;
+		};
+		47D669B21E88AE67008C1E88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47D669641E88A877008C1E88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D669881E88ABE8008C1E88;
+			remoteInfo = CRDCryptMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		474278D31E8C86BD0041E2DC /* CRDCrypt.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CRDCrypt.podspec; sourceTree = "<group>"; };
+		474278D41E8C9E090041E2DC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		474278D51E8C9E090041E2DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		474278D81E8C9E790041E2DC /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		47D6696D1E88A877008C1E88 /* CRDCryptMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDCryptMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D669791E88A8ED008C1E88 /* CRDCryptMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRDCryptMobile.h; path = CRDCryptMobile/CRDCryptMobile.h; sourceTree = SOURCE_ROOT; };
+		47D6697A1E88A8ED008C1E88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CRDCryptMobile/Info.plist; sourceTree = SOURCE_ROOT; };
+		47D6697D1E88A99B008C1E88 /* Data+MyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+MyExtensions.swift"; path = "Shared/Data+MyExtensions.swift"; sourceTree = "<group>"; };
+		47D6697E1E88A99B008C1E88 /* NSData+MyExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+MyExtensions.h"; path = "Shared/NSData+MyExtensions.h"; sourceTree = "<group>"; };
+		47D6697F1E88A99B008C1E88 /* NSData+MyExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+MyExtensions.m"; path = "Shared/NSData+MyExtensions.m"; sourceTree = "<group>"; };
+		47D669891E88ABE8008C1E88 /* CRDCryptMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDCryptMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D6698B1E88ABE8008C1E88 /* CRDCryptMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDCryptMac.h; sourceTree = "<group>"; };
+		47D6698C1E88ABE8008C1E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D669981E88AC6C008C1E88 /* CRDCryptMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDCryptMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D6699C1E88AC6C008C1E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D669A41E88ACB0008C1E88 /* DataMyExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataMyExtensionsTests.swift; path = SharedTests/DataMyExtensionsTests.swift; sourceTree = "<group>"; };
+		47D669AC1E88AE67008C1E88 /* CRDCryptMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDCryptMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D669B01E88AE67008C1E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47D669691E88A877008C1E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669851E88ABE8008C1E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669951E88AC6C008C1E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D6699D1E88AC6C008C1E88 /* CRDCryptMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669A91E88AE67008C1E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D669B11E88AE67008C1E88 /* CRDCryptMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47D669631E88A877008C1E88 = {
+			isa = PBXGroup;
+			children = (
+				474278D81E8C9E790041E2DC /* .travis.yml */,
+				474278D41E8C9E090041E2DC /* LICENSE */,
+				474278D51E8C9E090041E2DC /* README.md */,
+				474278D31E8C86BD0041E2DC /* CRDCrypt.podspec */,
+				47D669781E88A895008C1E88 /* Shared */,
+				47D6696F1E88A877008C1E88 /* CRDCryptMobile */,
+				47D6698A1E88ABE8008C1E88 /* CRDCryptMac */,
+				47D669A31E88ACA0008C1E88 /* SharedTests */,
+				47D669991E88AC6C008C1E88 /* CRDCryptMobileTests */,
+				47D669AD1E88AE67008C1E88 /* CRDCryptMacTests */,
+				47D6696E1E88A877008C1E88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47D6696E1E88A877008C1E88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47D6696D1E88A877008C1E88 /* CRDCryptMobile.framework */,
+				47D669891E88ABE8008C1E88 /* CRDCryptMac.framework */,
+				47D669981E88AC6C008C1E88 /* CRDCryptMobileTests.xctest */,
+				47D669AC1E88AE67008C1E88 /* CRDCryptMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47D6696F1E88A877008C1E88 /* CRDCryptMobile */ = {
+			isa = PBXGroup;
+			children = (
+				47D669791E88A8ED008C1E88 /* CRDCryptMobile.h */,
+				47D6697A1E88A8ED008C1E88 /* Info.plist */,
+			);
+			name = CRDCryptMobile;
+			path = CRDCrypt;
+			sourceTree = "<group>";
+		};
+		47D669781E88A895008C1E88 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				47D6697D1E88A99B008C1E88 /* Data+MyExtensions.swift */,
+				47D6697E1E88A99B008C1E88 /* NSData+MyExtensions.h */,
+				47D6697F1E88A99B008C1E88 /* NSData+MyExtensions.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		47D6698A1E88ABE8008C1E88 /* CRDCryptMac */ = {
+			isa = PBXGroup;
+			children = (
+				47D6698B1E88ABE8008C1E88 /* CRDCryptMac.h */,
+				47D6698C1E88ABE8008C1E88 /* Info.plist */,
+			);
+			path = CRDCryptMac;
+			sourceTree = "<group>";
+		};
+		47D669991E88AC6C008C1E88 /* CRDCryptMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				47D6699C1E88AC6C008C1E88 /* Info.plist */,
+			);
+			path = CRDCryptMobileTests;
+			sourceTree = "<group>";
+		};
+		47D669A31E88ACA0008C1E88 /* SharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				47D669A41E88ACB0008C1E88 /* DataMyExtensionsTests.swift */,
+			);
+			name = SharedTests;
+			sourceTree = "<group>";
+		};
+		47D669AD1E88AE67008C1E88 /* CRDCryptMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				47D669B01E88AE67008C1E88 /* Info.plist */,
+			);
+			path = CRDCryptMacTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47D6696A1E88A877008C1E88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D6697B1E88A8ED008C1E88 /* CRDCryptMobile.h in Headers */,
+				47D669811E88A99B008C1E88 /* NSData+MyExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669861E88ABE8008C1E88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D6698D1E88ABE8008C1E88 /* CRDCryptMac.h in Headers */,
+				47D669931E88AC2A008C1E88 /* NSData+MyExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47D6696C1E88A877008C1E88 /* CRDCryptMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D669751E88A877008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMobile" */;
+			buildPhases = (
+				47D669681E88A877008C1E88 /* Sources */,
+				47D669691E88A877008C1E88 /* Frameworks */,
+				47D6696A1E88A877008C1E88 /* Headers */,
+				47D6696B1E88A877008C1E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDCryptMobile;
+			productName = CRDCrypt;
+			productReference = 47D6696D1E88A877008C1E88 /* CRDCryptMobile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47D669881E88ABE8008C1E88 /* CRDCryptMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D6698E1E88ABE8008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMac" */;
+			buildPhases = (
+				47D669841E88ABE8008C1E88 /* Sources */,
+				47D669851E88ABE8008C1E88 /* Frameworks */,
+				47D669861E88ABE8008C1E88 /* Headers */,
+				47D669871E88ABE8008C1E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CRDCryptMac;
+			productName = CRDCryptMac;
+			productReference = 47D669891E88ABE8008C1E88 /* CRDCryptMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47D669971E88AC6C008C1E88 /* CRDCryptMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D669A01E88AC6C008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMobileTests" */;
+			buildPhases = (
+				47D669941E88AC6C008C1E88 /* Sources */,
+				47D669951E88AC6C008C1E88 /* Frameworks */,
+				47D669961E88AC6C008C1E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47D6699F1E88AC6C008C1E88 /* PBXTargetDependency */,
+			);
+			name = CRDCryptMobileTests;
+			productName = CRDCryptMobileTests;
+			productReference = 47D669981E88AC6C008C1E88 /* CRDCryptMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47D669AB1E88AE67008C1E88 /* CRDCryptMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D669B41E88AE67008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMacTests" */;
+			buildPhases = (
+				47D669A81E88AE67008C1E88 /* Sources */,
+				47D669A91E88AE67008C1E88 /* Frameworks */,
+				47D669AA1E88AE67008C1E88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47D669B31E88AE67008C1E88 /* PBXTargetDependency */,
+			);
+			name = CRDCryptMacTests;
+			productName = CRDCryptMacTests;
+			productReference = 47D669AC1E88AE67008C1E88 /* CRDCryptMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47D669641E88A877008C1E88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Christopher Disdero";
+				TargetAttributes = {
+					47D6696C1E88A877008C1E88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					47D669881E88ABE8008C1E88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+					47D669971E88AC6C008C1E88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+					47D669AB1E88AE67008C1E88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4475S8NVSN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 47D669671E88A877008C1E88 /* Build configuration list for PBXProject "CRDCrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 47D669631E88A877008C1E88;
+			productRefGroup = 47D6696E1E88A877008C1E88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47D6696C1E88A877008C1E88 /* CRDCryptMobile */,
+				47D669881E88ABE8008C1E88 /* CRDCryptMac */,
+				47D669971E88AC6C008C1E88 /* CRDCryptMobileTests */,
+				47D669AB1E88AE67008C1E88 /* CRDCryptMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47D6696B1E88A877008C1E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669871E88ABE8008C1E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669961E88AC6C008C1E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669AA1E88AE67008C1E88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47D669681E88A877008C1E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D669821E88A99B008C1E88 /* NSData+MyExtensions.m in Sources */,
+				47D669801E88A99B008C1E88 /* Data+MyExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669841E88ABE8008C1E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D669921E88AC24008C1E88 /* NSData+MyExtensions.m in Sources */,
+				47D669911E88AC24008C1E88 /* Data+MyExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669941E88AC6C008C1E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D669A61E88ACD9008C1E88 /* DataMyExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D669A81E88AE67008C1E88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D669B71E88AE77008C1E88 /* DataMyExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47D6699F1E88AC6C008C1E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D6696C1E88A877008C1E88 /* CRDCryptMobile */;
+			targetProxy = 47D6699E1E88AC6C008C1E88 /* PBXContainerItemProxy */;
+		};
+		47D669B31E88AE67008C1E88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D669881E88ABE8008C1E88 /* CRDCryptMac */;
+			targetProxy = 47D669B21E88AE67008C1E88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		47D669731E88A877008C1E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47D669741E88A877008C1E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47D669761E88A877008C1E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDCryptMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		47D669771E88A877008C1E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CRDCryptMobile/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		47D6698F1E88ABE8008C1E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CRDCryptMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCryptMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		47D669901E88ABE8008C1E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CRDCryptMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCryptMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		47D669A11E88AC6C008C1E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDCryptMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCryptMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		47D669A21E88AC6C008C1E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDCryptMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCryptMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		47D669B51E88AE67008C1E88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDCryptMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCryptMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		47D669B61E88AE67008C1E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4475S8NVSN;
+				INFOPLIST_FILE = CRDCryptMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisDisdero.CRDCryptMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47D669671E88A877008C1E88 /* Build configuration list for PBXProject "CRDCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D669731E88A877008C1E88 /* Debug */,
+				47D669741E88A877008C1E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D669751E88A877008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D669761E88A877008C1E88 /* Debug */,
+				47D669771E88A877008C1E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D6698E1E88ABE8008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D6698F1E88ABE8008C1E88 /* Debug */,
+				47D669901E88ABE8008C1E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D669A01E88AC6C008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D669A11E88AC6C008C1E88 /* Debug */,
+				47D669A21E88AC6C008C1E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D669B41E88AE67008C1E88 /* Build configuration list for PBXNativeTarget "CRDCryptMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D669B51E88AE67008C1E88 /* Debug */,
+				47D669B61E88AE67008C1E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47D669641E88A877008C1E88 /* Project object */;
+}
