@@ -3,7 +3,7 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CRDCrypt.svg)](https://img.shields.io/cocoapods/v/CRDCrypt.svg)
 [![Platform](https://img.shields.io/cocoapods/p/CRDCrypt.svg?style=flat)](http://cocoadocs.org/docsets/CRDCrypt)
 
-Simple straightforward Swift-based extension to Data for AES256 encryption/decryption for macOS and iOS
+Simple straightforward Swift-based extension to Data for AES 256 bit encryption/decryption for macOS and iOS
 
 - [Overview](#overview)
 - [Requirements](#requirements)
@@ -13,7 +13,7 @@ Simple straightforward Swift-based extension to Data for AES256 encryption/decry
 - [License](#license)
 
 ## Overview
-TODO: Info here.
+I recently needed a simple way to encrypt/decrypt strings and other small data using AES 256 bit encryption using an optional initialization vector to increase encryption pattern randomness.  The result is this small code library that extends the Swift class `Data` with methods to encrypt and decrypt and to generate a unique initialization vector that can be used in the encryption and decryption calls.
 
 ## Requirements
 - iOS 9.0+ / macOS 10.11+
@@ -21,7 +21,13 @@ TODO: Info here.
 - Swift 3.0+
 
 ## Installation
-TODO: Info here
+You can simply copy the following files from the GitHub tree into your project:
+
+  * `Data+MyExtensions.swift`
+    - Swift-based extension to the built-in `Data` class for encryption/decryption and for generating an initialization vector.
+
+  * `NSData+MyExtensions.m + .h`
+    - Objective C implementation of the encryption/decryption routines called by the Swift-based extensions to the `Data` class.
 
 ### CocoaPods
 Alternatively, you can install it as a Cocoapod
@@ -32,17 +38,16 @@ Alternatively, you can install it as a Cocoapod
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build CRDKeychain.
+> CocoaPods 1.1.0+ is required to build CRDCrypt.
 
 To integrate CRDKeychain into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
-use_frameworks!
+target 'MyApp' do
+  use_frameworks!
 
-target '<Your Target Name>' do
-pod 'CRDCrypt'
+  # Pods for MyApp
+  pod 'CRDCrypt'
 end
 ```
 
@@ -53,7 +58,48 @@ $ pod install
 ```
 
 ## Usage
-TODO: Info here
+The library is easy to use.  Just import CRDCrypt and generate an initialization vector:
+
+```
+let iv = Data.generateInitializationVector()
+```
+
+Then we can use this initialization vector in the encryption call to encrypt some string data and make the encryption less predictable between encryptions, for example:
+
+```
+let myStringToEncrypt = "This is the string I want to encrypt with the library."
+let myPrivateKey = "This is my master key"
+var encryptedData: Data? = nil
+var myStringDecrypted: String? = nil
+
+do {
+
+  encryptedData = try myStringToEncrypt.data(using: .utf8)?.aes256Encrypt(withKey: myPrivateKey, initializationVector: iv)
+
+} catch let error as NSError {
+
+  print("\(error)")
+}
+
+```
+
+To decrypt, we use the same initialization vector that was used to encrypt and our key again:
+
+```
+if let encryptedData = encryptedData {
+
+  do {
+
+    myStringDecrypted = String(bytes: try encryptedData.aes256Decrypt(withKey: myPrivateKey, initializationVector: iv), encoding: .utf8)
+
+  } catch let error as NSError {
+
+    print("\(error)")
+  }
+}
+
+print("Unencrypted: \(myStringDecrypted)")
+```
 
 ## Conclusion
 I hope this small library/framework is helpful to you in your next Swift project.  I'll be updating as time and inclination permits and of course I welcome all your feedback.

@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "CRDCrypt"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "Simple and quick way to encrypt/decrypt strings with AES256 on iOS or macOS."
 s.description  = <<-DESC
 Simple straightforward Swift-based extension to Data for AES256 encryption/decryption for macOS and iOS.
