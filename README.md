@@ -3,7 +3,7 @@
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CRDCrypt.svg)](https://img.shields.io/cocoapods/v/CRDCrypt.svg)
 [![Platform](https://img.shields.io/cocoapods/p/CRDCrypt.svg?style=flat)](http://cocoadocs.org/docsets/CRDCrypt)
 
-Simple straightforward Swift-based extension to Data for AES 256 bit encryption/decryption for macOS and iOS
+Simple straightforward Swift-based extension to Data for AES 256 bit encryption/decryption for iOS, macOS, watchOS, and tvOS
 
 - [Overview](#overview)
 - [Requirements](#requirements)
@@ -16,7 +16,7 @@ Simple straightforward Swift-based extension to Data for AES 256 bit encryption/
 I recently needed a simple way to encrypt/decrypt strings and other small data using AES 256 bit encryption using an optional initialization vector to increase encryption pattern randomness.  The result is this small code library that extends the Swift class `Data` with methods to encrypt and decrypt and to generate a unique initialization vector that can be used in the encryption and decryption calls.
 
 ## Requirements
-- iOS 9.0+ / macOS 10.11+
+- iOS 9.0+ / macOS 10.11+ / watchOS 3.0+ / tvOS 9.0+
 - Xcode 8.2+
 - Swift 3.0+
 

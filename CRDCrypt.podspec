@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "CRDCrypt"
-s.version      = "1.0.2"
-s.summary      = "Simple and quick way to encrypt/decrypt strings with AES256 on iOS or macOS."
+s.version      = "1.0.3"
+s.summary      = "Simple and quick way to encrypt/decrypt strings with AES256 on iOS, macOS, watchOS, and tvOS."
 s.description  = <<-DESC
-Simple straightforward Swift-based extension to Data for AES256 encryption/decryption for macOS and iOS.
+Simple straightforward Swift-based extension to Data for AES256 encryption/decryption for iOS, macOS, watchOS, and tvOS.
 DESC
 
 s.homepage     = "https://github.com/cdisdero/CRDCrypt"
@@ -35,6 +35,8 @@ s.author             = { "Christopher Disdero" => "info@code.chrisdisdero.com" }
 
 s.ios.deployment_target = "9.0"
 s.osx.deployment_target = "10.11"
+s.watchos.deployment_target = "3.0"
+s.tvos.deployment_target = "9.0"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -47,5 +49,7 @@ s.source       = { :git => "https://github.com/cdisdero/CRDCrypt.git", :tag => "
 s.source_files       = 'Shared/*.{swift,h,m}'
 s.ios.source_files   = 'CRDCryptMobile/*.h'
 s.osx.source_files   = 'CRDCryptMac/*.h'
+s.watchos.source_files = 'CRDCryptWatch/*.h'
+s.tvos.source_files  = 'CRDCryptTV/*.h'
 
 end

@@ -25,6 +25,8 @@ import XCTest
     import CRDCryptMobile
 #elseif os(OSX)
     import CRDCryptMac
+#elseif os(tvOS)
+    import CRDCryptTV
 #endif
 
 class DataMyExtensionsTests: XCTestCase {
