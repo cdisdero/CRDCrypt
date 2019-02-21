@@ -1,4 +1,4 @@
-# CRDKeychain
+# CRDCrypt
 [![Build Status](https://travis-ci.org/cdisdero/CRDCrypt.svg?branch=master)](https://travis-ci.org/cdisdero/CRDCrypt)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CRDCrypt.svg)](https://img.shields.io/cocoapods/v/CRDCrypt.svg)
 [![Platform](https://img.shields.io/cocoapods/p/CRDCrypt.svg?style=flat)](http://cocoadocs.org/docsets/CRDCrypt)
@@ -13,12 +13,12 @@ Simple straightforward Swift-based extension to Data for AES 256 bit encryption/
 - [License](#license)
 
 ## Overview
-I recently needed a simple way to encrypt/decrypt strings and other small data using AES 256 bit encryption using an optional initialization vector to increase encryption pattern randomness.  The result is this small code library that extends the Swift class `Data` with methods to encrypt and decrypt and to generate a unique initialization vector that can be used in the encryption and decryption calls.
+I needed a simple way to encrypt/decrypt strings and other small data using AES 256 bit encryption using an optional initialization vector to increase encryption pattern randomness.  The result is this small code library that extends the Swift class `Data` with methods to encrypt and decrypt and to generate a unique initialization vector that can be used in the encryption and decryption calls.
 
 ## Requirements
-- iOS 9.0+ / macOS 10.11+ / watchOS 3.0+ / tvOS 9.0+
-- Xcode 8.2+
-- Swift 3.0+
+- iOS 9.0+ / macOS 10.12+ / watchOS 3.0+ / tvOS 9.0+
+- Xcode 10.1+
+- Swift 4.0+
 
 ## Installation
 You can simply copy the following files from the GitHub tree into your project:
