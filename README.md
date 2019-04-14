@@ -17,8 +17,8 @@ I needed a simple way to encrypt/decrypt strings and other small data using AES 
 
 ## Requirements
 - iOS 9.0+ / macOS 10.12+ / watchOS 3.0+ / tvOS 9.0+
-- Xcode 10.1+
-- Swift 4.0+
+- Xcode 10.2+
+- Swift 5.0+
 
 ## Installation
 You can simply copy the following files from the GitHub tree into your project:
@@ -38,7 +38,7 @@ Alternatively, you can install it as a Cocoapod
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build CRDCrypt.
+> CocoaPods 1.7.0+ is required to build CRDCrypt.
 
 To integrate CRDKeychain into your Xcode project using CocoaPods, specify it in your `Podfile`:
 

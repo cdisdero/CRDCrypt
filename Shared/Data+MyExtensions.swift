@@ -24,19 +24,19 @@ import Foundation
 
 public extension Data {
     
-    public static func generateInitializationVector() -> Data {
+    static func generateInitializationVector() -> Data {
         
         var uuidBytes: [UInt8] = [UInt8](repeating: 0, count: 16)
         NSUUID().getBytes(&uuidBytes)
         return Data(bytes: &uuidBytes, count: 16)
     }
     
-    public func aes256Encrypt(withKey: String, initializationVector: Data?) throws -> Data {
+    func aes256Encrypt(withKey: String, initializationVector: Data?) throws -> Data {
         
         return try (self as NSData).aes256Encrypt(withKey: withKey, initializationVector: initializationVector)
     }
 
-    public func aes256Decrypt(withKey: String, initializationVector: Data?) throws -> Data {
+    func aes256Decrypt(withKey: String, initializationVector: Data?) throws -> Data {
         
         return try (self as NSData).aes256Decrypt(withKey: withKey, initializationVector: initializationVector)
     }
